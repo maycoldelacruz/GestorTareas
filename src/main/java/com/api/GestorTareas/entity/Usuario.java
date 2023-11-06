@@ -5,6 +5,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -16,6 +17,7 @@ public class Usuario {
     private long idUser;
     private String firstName;
     private String lastName;
+    @DateTimeFormat
     private Date birthdate;
     private String numberPhone;
     private String email;
